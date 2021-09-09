@@ -16,10 +16,11 @@
                 <i class="fas fa-angle-left"></i>
             </div>
             <div class="slider">
-                <img :src="image" alt="">
+                <img :src="images[counter]" alt="">
+
             </div>
-            <div class="next">
-                <i class="fas fa-angle-right"></i>
+            <div class="next" >
+                <i class="fas fa-angle-right" @click="nextPhotos"></i>
             </div>
             
         </div>
