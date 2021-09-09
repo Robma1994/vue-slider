@@ -13,7 +13,7 @@
         <div class="container">
             <h1>{{title}}</h1>
             <div class="back">
-                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-left" @click="backPhotos"></i>
             </div>
             <div class="slider">
                 <img :src="images[counter]" alt="">

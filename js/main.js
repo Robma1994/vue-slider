@@ -9,9 +9,15 @@ let app = new Vue({
     },  
     methods: {
         nextPhotos(){
-            this.counter += 1
+            this.counter += 1;
             if(this.counter > (this.images.length -1)) {
                 this.counter = 0
+            }
+        },
+        backPhotos(){
+            this.counter -=1; 
+            if(this.counter < 0 ) {
+                this.counter = (this.images.length -1);
             }
         }
     }
